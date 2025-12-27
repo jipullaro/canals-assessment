@@ -17,6 +17,10 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "email-validator>=2.3.0",
+    "fastapi[standard]>=0.127.1",
+]
 
 [project.urls]
 Homepage = "https://jipullaro.github.io/canals-assessment/"
