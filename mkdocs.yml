@@ -1,0 +1,52 @@
+site_name: canals-assessment
+repo_url: https://github.com/jipullaro/canals-assessment
+site_url: https://jipullaro.github.io/canals-assessment
+site_description: Backend service for e-commerce platform
+site_author: Juan Ignacio Pullaro
+edit_uri: edit/main/docs/
+repo_name: jipullaro/canals-assessment
+copyright: Maintained by <a href="https://jipullaro.com">jipullaro</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/canals_assessment"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jipullaro/canals-assessment
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/canals-assessment
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
